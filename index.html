@@ -89,7 +89,59 @@ section::after {
   <p>She is a daughter of Kris Jenner and Caitlyn Jenner, and rose to fame in the reality television show Keeping Up with the Kardashians, </p>
 </article>
 </section>
- 
+  /* Resetting default margin and padding */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensuring full viewport height */
+html, body {
+    height: 100%;
+}
+
+/* Styling the fixed menu */
+.fixed-menu {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.fixed-menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fixed-menu nav ul {
+    list-style: none;
+}
+
+.fixed-menu nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.fixed-menu nav ul li:last-child {
+    margin-right: 0;
+}
+
+.fixed-menu nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Styling the main content */
+.main-content {
+    padding-top: 60px; /* Adjusted to the height of the fixed menu */
+    text-align: center;
+}
+
  
 </body>
 </html>
